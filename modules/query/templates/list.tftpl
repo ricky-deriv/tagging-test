@@ -1,0 +1,4 @@
+region,instance-id,key:Name,key:name,key:Service,key:Env,key:Environment,key:Cost-Teevity,key:Team,key:Role,key:ManagedBy
+%{ for idx, instance in instances ~}
+${region},${instance.id},${try(instance.tags["Name"], "")},${try(instance.tags["name"], "")},${try(instance.tags["Service"], "")},${try(instance.tags["Env"], "")},${try(instance.tags["Environment"], "")},${try(instance.tags["Cost-Teevity"], "")},${try(instance.tags["Team"], "")},${try(instance.tags["Role"], "")},${try(instance.tags["ManagedBy"], "")}
+%{ endfor ~}
