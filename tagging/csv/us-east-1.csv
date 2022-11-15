@@ -1,2 +1,4 @@
 region,instance-id,key:Name,key:name,key:Service,key:Env,key:Environment,key:Cost-Teevity,key:Team,key:Role,key:ManagedBy
-us-east-1,i-04bcc7a0f1feb8a0e,test01,,qa-box,,,,,,
+us-east-1,i-04733f95a3b2a72a7,test01,,qa,qa,,,,,
+us-east-1,i-0aba5dbb6690fade7,crdb-01,,cr-db,canary,,,,,
+us-east-1,i-062e6e356b8b982c9,api-01,,api,canary,,,,,
